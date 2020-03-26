@@ -1,0 +1,189 @@
+body {
+  text-align: center;
+  background-color:
+}
+
+.choices {
+  margin: 5% auto;
+  background-color: #FF4C4B;
+  border-radius: 25px;
+  width: 250px;
+  height: 450px;
+  font-family: 'Fredoka One', cursive;
+  margin-bottom: 0;
+  box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.5);
+  position: relative;
+  left: 0%;
+}
+
+.X {
+  background-color: white;
+  border-radius: 16px;
+  margin: 5%;
+  height: 190px;
+  padding: 0;
+  font-size: 200px;
+  cursor: pointer;
+}
+
+.X:hover {
+  opacity: 0.5;
+}
+
+.O:hover {
+  opacity: 0.5;
+}
+
+.O {
+  margin: 5%;
+  height: 190px;
+  padding: 0;
+  font-size: 200px;
+}
+
+h3 {
+  margin-top: 3%;
+  font-size: 14px;
+  color: white;
+  box-sizing: border-box;
+  padding: 5% 2%;
+}
+
+.c {
+  height: 30px;
+}
+
+#bX, #bO {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+#bX {
+  color: #FF4C4B;
+  position: absolute;
+  left: 17%;
+  top: -25%;
+  z-index: +2;
+  cursor: pointer;
+}
+
+#bO {
+  color: white;
+  position: absolute;
+  left: 15%;
+  top: -33%;
+  z-index: +2;
+  cursor: pointer;
+}
+
+/* HIDE RADIO */
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.but {
+  margin: 2% auto;
+  margin-bottom: 0;
+  color: #FF4C4B;
+  font-size: 20px;
+  font-family: 'Fredoka One', cursive;
+  cursor: pointer;
+  z-index: +2;
+}
+
+.board {
+  display: none;
+  border-collapse: collapse;
+  margin:5% auto;
+  margin-bottom: 0;
+}
+
+.ok{
+  border-collapse: collapse;
+  margin:5% auto;
+  margin-bottom: 0;
+}
+
+td {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #FF4C4B;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 90px;
+  cursor: pointer;
+  color: #FF4C4B;
+}
+
+.repb{
+  margin: 0 auto;
+  visibility: hidden;
+}
+
+.oka{
+  margin: 0 auto;
+  visibility: visible;
+}
+
+#zero {
+  border-top: none;
+  border-left: none;
+}
+
+#one {
+  border-top: none;
+}
+
+#two {
+  /* or table tr td:second-child */
+  border-right: none;
+  border-top: none;
+}
+
+#three, #six {
+  border-left: none;
+}
+
+#six, #seven, #eight {
+  /* border-bottom: none; */
+}
+
+/* we have an alternative to the above */
+table tr:last-child td {
+  border-bottom: none;
+}
+
+#five, #eight {
+  border-right: none;
+}
+
+.endGame {
+  display: none;
+  width: 200px;
+  background-color: brown;
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  top: 120px;
+  margin-left: -100px;
+  padding: 50px 0;
+  height: 120px;
+  opacity: 0.5;
+}
+
+button {
+  display: none;
+}
+
+.startPage{
+  display: none;
+  visibility: hidden;
+}

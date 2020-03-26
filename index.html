@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tic Tac Toe Game</title>
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <form class="form" onsubmit="return startGame()" id="choices">
+    <div class="container choices">
+      <div class="col-lg-12 c">
+        <h3>Choose a side Player One</h3>
+      </div>
+      <div class="row">
+        <div class="col-lg-11 col-md-11 col-sm-11 X">
+          <label>
+            <input type="radio" id="rX" name="radi">
+            <label id="bX" for="rX">X</label>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 O">
+          <input type="radio" id="rO" name="radi">
+          <label id="bO" for="rO">O</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <button type="submit" class="but btn" id="but">Start</button>
+    </div>
+  </form>
+
+  <table class="board" id="board">
+    <tr>
+      <td class"cell" id="zero" onclick="makeMove(this)"></td>
+      <td class"cell" id="one" onclick="makeMove(this)"></td>
+      <td class"cell" id="two" onclick="makeMove(this)"></td>
+    </tr>
+    <tr>
+      <td class"cell" id="three" onclick="makeMove(this)"></td>
+      <td class"cell" id="four" onclick="makeMove(this)"></td>
+      <td class"cell" id="five" onclick="makeMove(this)"></td>
+    </tr>
+    <tr>
+      <td class"cell" id="six" onclick="makeMove(this)"></td>
+      <td class"cell" id="seven" onclick="makeMove(this)"></td>
+      <td class"cell" id="eight" onclick="makeMove(this)"></td>
+    </tr>
+  </table>
+
+  <!-- reset button -->
+  <button type="button" id="repb" class="btn btn-danger repb" onclick="startGame()"> REPLAY </button>
+
+  <!-- end the game -->
+  <div class="endGame">
+    <div class="text"></div>
+  </div>
+
+  <script src="js/script.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
